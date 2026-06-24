@@ -1,0 +1,92 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$source": "~/.cursor/skills/dse-design-system/tokens.json",
+  "version": "1.0.0",
+  "companyName": "Digital Staffing Experts",
+  "documentTitle": "Business & Digital Scan for Staffing & Recruitment",
+  "logo": {
+    "src": "assets/dse-logo-white.png",
+    "alt": "Digital Staffing Experts",
+    "dark": "assets/dse-logo.png",
+    "svg": "assets/logo.svg",
+    "bird": "assets/bird-orange.png",
+    "birdSvg": "assets/bird.svg",
+    "iconOrange": "assets/Digital Staffing Experts_I16_Orange.png"
+  },
+  "typography": {
+    "fontFamily": "Poppins, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap",
+    "scale": {
+      "display": "30px",
+      "h1": "24px",
+      "h2": "18px",
+      "h3": "15px",
+      "body": "13.5px",
+      "small": "12.5px",
+      "caption": "11px",
+      "overline": "9.5px"
+    }
+  },
+  "colors": {
+    "brand": "#002C2F",
+    "brand2": "#89A9A9",
+    "text": "#002C2F",
+    "mutedText": "#4F6B6C",
+    "bg": "#F5FAFA",
+    "surface": "#FFFFFF",
+    "border": "#D6E6E6",
+    "ok": "#002C2F",
+    "warn": "#F04A00",
+    "risk": "#B42318",
+    "positive": "#1F6B5C",
+    "slate": "#5B7C9D"
+  },
+  "dataviz": {
+    "green": "#1F8A65",
+    "blue": "#2E79B5",
+    "orange": "#F0A040",
+    "accent": "#3685BF",
+    "yellow": "#E8B923"
+  },
+  "tint": {
+    "bg": "color-mix(in srgb, var(--brand2) 18%, #fff 82%)",
+    "card": "color-mix(in srgb, var(--brand2) 10%, #fff 90%)",
+    "cardStrong": "color-mix(in srgb, var(--brand2) 22%, #fff 78%)",
+    "documentBg": "#FAF9F7",
+    "documentCard": "#FFFFFF"
+  },
+  "modes": {
+    "document": {
+      "bodyClass": "scan",
+      "description": "Workshop tools, long reports — 16px body, warm #FAF9F7 background",
+      "typography": { "body": "16px", "lineHeight": "1.5" },
+      "background": "#FAF9F7",
+      "orangeBudgetPerPage": 3,
+      "orangeAllowed": ["primary button (.btn-primary)", "one title accent (.accent)", "one optional underline OR checkmark — not both"]
+    },
+    "marketing": {
+      "bodyClass": "offering",
+      "description": "A4 posters, sales one-pagers — compact 13.5px, mint tints, gradient hero",
+      "typography": { "body": "13.5px", "lineHeight": "1.35" },
+      "background": "mint tint via --tint-bg",
+      "orangeBudgetPerPage": 3,
+      "orangeAllowed": ["CTA button", "hero title accent", "one decorative accent (flow step or checkmark)"]
+    }
+  },
+  "spacing": {
+    "base": "8px",
+    "pagePadding": "28px 20px 80px",
+    "cardPadding": "12px",
+    "gridGap": "12px"
+  },
+  "radius": {
+    "card": "14px",
+    "button": "999px",
+    "input": "12px",
+    "section": "16px"
+  },
+  "icons": {
+    "sectionHeading": "assets/bird-orange.png",
+    "styleNote": "Canonical assets live in ~/.cursor/skills/dse-design-system/assets/. Copy to project assets/ or reference via skill path."
+  }
+}

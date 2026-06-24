@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Digital Staffing Experts — independent digital expertise for staffing &amp; recruitment. Vendor-neutral methodology for adoption, selection, and customer-side project leadership."
+    />
+    <title>Digital Staffing Experts — Methodology</title>
+    <link rel="icon" href="assets/Digital Staffing Experts_I16_Orange.png" type="image/png" />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="page.css" />
+    <style>
+      .triangle-node { cursor: pointer; transition: opacity 0.2s; }
+      .triangle-node.is-dimmed { opacity: 0.4; }
+      .triangle-node.is-active circle,
+      .triangle-node.is-active rect { stroke: #f04a00; stroke-width: 3; }
+    </style>
+  </head>
+  <body class="dse">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">
+        <img src="assets/dse-logo-nav.png" alt="Digital Staffing Experts" />
+      </a>
+      <div class="nav-links">
+        <a href="#problems">Problems</a>
+        <a href="#cycle">Project cycle</a>
+        <a href="#position">Our role</a>
+        <a href="#value">Value</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#references">References</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero-wrap" id="top">
+      <div class="hero-inner">
+        <div>
+          <h1 class="hero-title">
+            <span class="accent">Independent</span> <span class="accent">digital expertise</span> for Staffing &amp;
+            Recruitment
+          </h1>
+          <p class="hero-sub">
+            We help staffing &amp; recruitment organisations adopt technology that sticks — faster implementations,
+            clearer ownership, and a landscape that matches how people actually work. We bridge business and IT for
+            staffing &amp; recruitment agencies, (ATS) technology providers, and integrators from one independent
+            central expertise.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#value">See the value</a>
+            <a class="btn btn-ghost" href="#methodology">Explore methodology</a>
+          </div>
+        </div>
+        <div class="formula-card">
+          <div class="formula">
+            <span class="formula-line">Digital success =</span>
+            <span class="formula-line">
+              (Organisation &amp; People × Process)<sup class="formula-exp">Technology</sup>
+            </span>
+          </div>
+          <p class="formula-note">
+            Technology amplifies what is already there. Without organisation clarity and process discipline, even the
+            best ATS becomes an expensive database. We make both sides of the house ready before — and long after —
+            go-live.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. Problems -->
+      <section class="section" id="problems">
+        <div class="section-inner">
+          <span class="section-label">01 — What we see</span>
+          <h2>Problems we identified</h2>
+          <p class="section-lead">
+            The same patterns appear across digital projects — but each party experiences different pain.
+          </p>
+          <p class="section-lead section-lead--follow">
+            Select a seat at the table.
+          </p>
+          <div class="party-tabs" id="party-tabs"></div>
+          <div id="problem-panel"></div>
+        </div>
+      </section>
+
+      <!-- 2. Classic cycle -->
+      <section class="section section--tint" id="cycle">
+        <div class="section-inner">
+          <span class="section-label">02 — Today’s reality</span>
+          <h2>What technology implementation projects look like today</h2>
+          <p class="section-lead">
+            A classic implementation cycle in staffing &amp; recruitment. Click each phase to see what typically goes wrong
+            — and where an independent customer-side partner changes the outcome.
+          </p>
+          <div class="cycle-board">
+            <div class="cycle-lanes" id="cycle-lanes" aria-hidden="true"></div>
+            <div class="cycle-track" id="cycle-track"></div>
+            <div class="cycle-detail" id="cycle-detail"></div>
+            <p class="cycle-callout">
+              Real change and well-adopted technology starts well before the selection is made, the integrator starts
+              building, and ends long after hypercare ends.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Position -->
+      <section class="section" id="position">
+        <div class="section-inner">
+          <span class="section-label">03 — Our position</span>
+          <h2>How we fit into the mix</h2>
+          <p class="section-lead">
+            We are the objective centre — independent experts coordinating customer, ATS technology provider, and
+            integrator. We fully understand the business side (recruitment, sales, mid- &amp; back office) and bring deep
+            technical experience in application integration and IT management.
+          </p>
+
+          <div class="split-layout">
+            <div class="triangle-stage">
+              <p style="text-align: center; font-size: 13px; color: var(--muted); margin: 0 0 12px">
+                Click a role to explore ownership
+              </p>
+              <svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg" style="max-width: 400px; margin: 0 auto; display: block">
+                <polygon points="200,40 40,320 360,320" fill="none" stroke="#D6E6E6" stroke-width="2" stroke-dasharray="6 4" />
+                <g class="triangle-node" data-role="customer" role="button" tabindex="0" transform="translate(200, 55)">
+                  <circle r="42" fill="#F0F5F5" stroke="#89A9A9" stroke-width="2" />
+                  <text text-anchor="middle" y="-4" font-size="11" font-weight="600" fill="#002C2F">Customer</text>
+                  <text text-anchor="middle" y="12" font-size="9" fill="#4F6B6C">Business</text>
+                </g>
+                <g class="triangle-node" data-role="vendor" role="button" tabindex="0" transform="translate(95, 305)">
+                  <circle r="42" fill="#F0F5F5" stroke="#89A9A9" stroke-width="2" />
+                  <text text-anchor="middle" y="-6" font-size="10" font-weight="600" fill="#002C2F">ATS</text>
+                  <text text-anchor="middle" y="8" font-size="9" fill="#4F6B6C">Technology</text>
+                  <text text-anchor="middle" y="20" font-size="9" fill="#4F6B6C">provider</text>
+                </g>
+                <g class="triangle-node" data-role="integrator" role="button" tabindex="0" transform="translate(305, 305)">
+                  <circle r="42" fill="#F0F5F5" stroke="#89A9A9" stroke-width="2" />
+                  <text text-anchor="middle" y="-4" font-size="10" font-weight="600" fill="#002C2F">Integrator</text>
+                  <text text-anchor="middle" y="12" font-size="9" fill="#4F6B6C">Build</text>
+                </g>
+                <g class="triangle-node is-active" data-role="dse" role="button" tabindex="0" transform="translate(200, 210)">
+                  <rect x="-58" y="-32" width="116" height="64" rx="14" fill="#F04A00" />
+                  <text text-anchor="middle" y="-8" font-size="10" font-weight="700" fill="#fff">Digital Staffing</text>
+                  <text text-anchor="middle" y="8" font-size="10" font-weight="700" fill="#fff">Experts</text>
+                  <text text-anchor="middle" y="24" font-size="8" fill="rgba(255,255,255,0.9)">Objective centre</text>
+                </g>
+              </svg>
+            </div>
+            <div class="triangle-detail" id="triangle-detail" aria-live="polite"></div>
+          </div>
+
+          <div class="bridge-pillars">
+            <article class="bridge-pillar">
+              <h3>The business side</h3>
+              <ul>
+                <li><strong>Recruitment</strong> — sourcing, matching, fill rate</li>
+                <li><strong>Sales</strong> — acquisition, key accounts, proposals</li>
+                <li><strong>Mid- &amp; back office</strong> — planning, contracting, payroll, compliance</li>
+              </ul>
+            </article>
+            <div class="bridge-core">
+              <img src="assets/bird.svg" alt="" />
+              <span>We bridge both worlds</span>
+            </div>
+            <article class="bridge-pillar">
+              <h3>The IT side</h3>
+              <ul>
+                <li><strong>Application landscape</strong> — ATS, CRM, VMS, payroll, BI</li>
+                <li><strong>Integration</strong> — APIs, data flows, migration</li>
+                <li><strong>Management</strong> — governance, releases, security</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Value -->
+      <section class="section section--tint" id="value">
+        <div class="section-inner">
+          <span class="section-label">04 — Outcomes</span>
+          <h2>The value of our offering</h2>
+          <p class="section-lead">
+            One methodology, three audiences. We never sell ATS licences nor implement the vendor product so we can
+            maintain our unique objective position. We only work in the customer’s best interest and make the whole
+            ecosystem move faster.
+          </p>
+          <div class="party-tabs value-audience-tabs" id="value-tabs"></div>
+          <div id="value-panel"></div>
+        </div>
+      </section>
+
+      <!-- 5. Methodology -->
+      <section class="section" id="methodology">
+        <div class="section-inner">
+          <span class="section-label">05 — How we work</span>
+          <h2>Our methodology</h2>
+          <p class="section-lead">
+            An integrated path from first clarity to lasting adoption — Business &amp; Digital Scan, 7-step ATS
+            selection (Steps 0–7), customer-side project management, application architecture, and change &amp;
+            adoption.
+          </p>
+          <div class="method-map" id="method-map"></div>
+        </div>
+      </section>
+
+      <!-- 6. References -->
+      <section class="section section--tint" id="references">
+        <div class="section-inner">
+          <span class="section-label">06 — Proof</span>
+          <h2>References</h2>
+          <p class="section-lead">
+            Selected engagements mapped to our methodology pillars. Filter by engagement type.
+          </p>
+          <div class="ref-filters" id="ref-filters"></div>
+          <div class="ref-grid" id="ref-grid"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="cta-section" id="contact">
+        <div class="cta-inner">
+          <h2>Bring us in where adoption matters</h2>
+          <p>
+            For customers, ATS technology providers, and integrators — involve us early. We bridge business and IT so your
+            next implementation lands in the organisation, not only in the licence count.
+          </p>
+          <div class="cta-contacts">
+            <a class="cta-btn" href="mailto:karel@digitalstaffingexperts.com">karel@digitalstaffingexperts.com</a>
+            <a class="cta-btn" href="mailto:pieterjan@digitalstaffingexperts.com">pieterjan@digitalstaffingexperts.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>Digital Staffing Experts</strong> — We make digital work.<br />
+      Pauwstraat 7, 4815 GL Breda, Netherlands
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
