@@ -265,13 +265,32 @@
     },
   ];
 
-  /* ── References (Notion DSE Projects + portfolio) ─────────────────── */
+  /* ── Proof / credibility stats ────────────────────────────────────── */
+
+  var PROOF_STATS = [
+    {
+      value: "100+",
+      label: "Qualified digital experts for Staffing & Recruitment",
+    },
+    {
+      value: "7",
+      label: "Active digital experts",
+    },
+    {
+      value: null,
+      label: "Active projects",
+      countKey: "activeProjects",
+    },
+  ];
+
+  /* ── References (Notion DSE Projects) ───────────────────────────── */
+  /* pageStatus synced from Notion “Methodology page status” (2026-06-25) */
 
   var PROJECTS = [
     {
       customer: "Proman Jobs",
       project: "Change & Adoption Greenfield",
-      status: "Ongoing",
+      pageStatus: "Active",
       type: "Interim management",
       methods: ["Change & Adoption", "Project management", "Process design"],
       source: "notion",
@@ -279,7 +298,7 @@
     {
       customer: "Kasparov Finance & BI",
       project: "Business & Digital Scan",
-      status: "Planned",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Business & Digital Scan"],
       source: "notion",
@@ -287,7 +306,7 @@
     {
       customer: "TMC",
       project: "Global rollout — ATS Recruitment Cloud",
-      status: "Ongoing",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Project management", "Change & Adoption"],
       source: "notion",
@@ -295,31 +314,15 @@
     {
       customer: "TMC",
       project: "AI programme management",
-      status: "Ongoing",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Project management", "Business case"],
       source: "notion",
     },
     {
-      customer: "TMC",
-      project: "Technology selection (17 countries)",
-      status: "Register",
-      type: "Consulting",
-      methods: ["Technology selection"],
-      source: "notion",
-    },
-    {
       customer: "Logistic Force",
       project: "Technology selection — ATS group rollout",
-      status: "Register",
-      type: "Consulting",
-      methods: ["Technology selection"],
-      source: "notion",
-    },
-    {
-      customer: "Personato",
-      project: "ATS selection (with Mettom)",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Technology selection"],
       source: "notion",
@@ -327,7 +330,7 @@
     {
       customer: "Effect",
       project: "Implementation management — ATS Recruitment Cloud",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Project management"],
       source: "notion",
@@ -335,39 +338,31 @@
     {
       customer: "VNOM",
       project: "Implementation management — ATS Recruitment Cloud",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Project management"],
       source: "notion",
     },
     {
       customer: "Logi-Technic",
-      project: "Salesforce architecture, change & adoption",
-      status: "Register",
+      project: "Salesforce solution architecture & business analysis",
+      pageStatus: "Active",
       type: "Consulting",
-      methods: ["Architecture", "Change & Adoption"],
+      methods: ["Architecture", "Change & Adoption", "Business & Digital Scan"],
       source: "notion",
     },
     {
       customer: "Covebo Bouw & Techniek",
       project: "Change management — Connexys adoption",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Change & Adoption"],
       source: "notion",
     },
     {
-      customer: "Loyal Interim",
-      project: "ATS adoption & process design",
-      status: "Register",
-      type: "Consulting",
-      methods: ["Change & Adoption", "Process design"],
-      source: "notion",
-    },
-    {
       customer: "AXS",
       project: "Project management — digital board support",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Project management"],
       source: "notion",
@@ -375,7 +370,7 @@
     {
       customer: "Enginear",
       project: "Salesforce architecture — Connexys",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Architecture"],
       source: "notion",
@@ -383,23 +378,47 @@
     {
       customer: "Acerta Career Center",
       project: "Salesforce architecture",
-      status: "Register",
+      pageStatus: "Active",
       type: "Consulting",
       methods: ["Architecture"],
       source: "notion",
     },
     {
-      customer: "Hyphen",
-      project: "ATS technology selection",
-      status: "Finished",
+      customer: "Bright Potentials",
+      project: "Salesforce consulting, architecture & application team setup",
+      pageStatus: "Active",
+      type: "Consulting",
+      methods: ["Architecture", "Change & Adoption"],
+      source: "notion",
+    },
+    {
+      customer: "TMC",
+      project: "Technology selection (17 countries)",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Technology selection"],
       source: "notion",
     },
     {
-      customer: "Logi-Technic",
-      project: "Recruitment marketing automation selection",
-      status: "Finished",
+      customer: "Personato",
+      project: "ATS selection (with Mettom)",
+      pageStatus: "Delivered",
+      type: "Consulting",
+      methods: ["Technology selection"],
+      source: "notion",
+    },
+    {
+      customer: "Loyal Interim",
+      project: "ATS adoption & process design",
+      pageStatus: "Delivered",
+      type: "Consulting",
+      methods: ["Change & Adoption", "Process design"],
+      source: "notion",
+    },
+    {
+      customer: "Hyphen",
+      project: "ATS technology selection",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Technology selection"],
       source: "notion",
@@ -407,7 +426,7 @@
     {
       customer: "House of Covebo",
       project: "Process design & change management",
-      status: "Finished",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Process design", "Change & Adoption", "Project management"],
       source: "notion",
@@ -415,7 +434,7 @@
     {
       customer: "Cuzo",
       project: "Business consulting",
-      status: "Finished",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Business & Digital Scan", "Business case"],
       source: "notion",
@@ -423,7 +442,7 @@
     {
       customer: "YER",
       project: "Salesforce consulting, architecture & application team setup",
-      status: "Finished",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Architecture", "Change & Adoption"],
       source: "notion",
@@ -431,7 +450,7 @@
     {
       customer: "CALCO",
       project: "Salesforce consulting, architecture & application team setup",
-      status: "Finished",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Architecture", "Change & Adoption"],
       source: "notion",
@@ -439,20 +458,15 @@
     {
       customer: "buro Nexus",
       project: "Salesforce consulting, architecture & application team setup",
-      status: "Finished",
-      type: "Consulting",
-      methods: ["Architecture", "Change & Adoption"],
-      source: "notion",
-    },
-    {
-      customer: "Bright Potentials",
-      project: "Salesforce consulting, architecture & application team setup",
-      status: "Finished",
+      pageStatus: "Delivered",
       type: "Consulting",
       methods: ["Architecture", "Change & Adoption"],
       source: "notion",
     },
   ];
+
+  var refStatusFilter = "all";
+  var refMethodFilter = "all";
 
   var TRIANGLE_ROLES = {
     customer: {
@@ -499,10 +513,14 @@
     return node;
   }
 
-  function statusClass(s) {
-    var key = s.toLowerCase().replace(/\s+/g, "-");
-    if (key === "register") return "status-pill status-pill--register";
-    return "status-pill status-pill--" + key;
+  function pageStatusClass(status) {
+    return "status-pill status-pill--" + status.toLowerCase();
+  }
+
+  function activeProjectCount() {
+    return PROJECTS.filter(function (p) {
+      return p.pageStatus === "Active";
+    }).length;
   }
 
   /* ── Renderers ────────────────────────────────────────────────────── */
@@ -792,13 +810,42 @@
     });
   }
 
-  function renderReferences(filter) {
+  function renderProofStats() {
+    $all(".proof-stats").forEach(function (root) {
+      root.innerHTML = "";
+
+      PROOF_STATS.forEach(function (s) {
+        var value = s.value;
+        if (s.countKey === "activeProjects") value = String(activeProjectCount());
+
+        root.appendChild(
+          el(
+            "div",
+            "proof-stat",
+            '<div class="proof-stat-value">' +
+              value +
+              '</div><div class="proof-stat-label">' +
+              s.label +
+              "</div>"
+          )
+        );
+      });
+    });
+  }
+
+  function renderReferences() {
     var grid = $("#ref-grid");
     if (!grid) return;
 
     var rows = PROJECTS.filter(function (p) {
-      if (!filter || filter === "all") return true;
-      return p.methods.indexOf(filter) >= 0;
+      if (refMethodFilter !== "all" && p.methods.indexOf(refMethodFilter) < 0) return false;
+      if (refStatusFilter !== "all" && p.pageStatus !== refStatusFilter) return false;
+      return true;
+    });
+
+    rows.sort(function (a, b) {
+      if (a.pageStatus === b.pageStatus) return 0;
+      return a.pageStatus === "Active" ? -1 : 1;
     });
 
     grid.innerHTML = "";
@@ -812,9 +859,16 @@
         el(
           "article",
           "ref-card",
-          "<h3>" +
+          '<div class="ref-card-head">' +
+            "<h3>" +
             p.customer +
             "</h3>" +
+            '<span class="' +
+            pageStatusClass(p.pageStatus) +
+            '">' +
+            p.pageStatus +
+            "</span>" +
+            "</div>" +
             "<p class=\"ref-card-project\">" +
             p.project +
             "</p>" +
@@ -823,6 +877,35 @@
             "</div>"
         )
       );
+    });
+  }
+
+  function initRefStatusFilters() {
+    var filters = $("#ref-status-filters");
+    if (!filters) return;
+
+    var opts = [
+      { id: "all", label: "All projects" },
+      { id: "Active", label: "Active" },
+      { id: "Delivered", label: "Delivered" },
+    ];
+
+    opts.forEach(function (o, i) {
+      var btn = el("button", "ref-filter ref-filter--status" + (i === 0 ? " is-active" : ""));
+      btn.type = "button";
+      btn.textContent = o.label;
+      btn.setAttribute("data-status-filter", o.id);
+      filters.appendChild(btn);
+    });
+
+    $all(".ref-filter", filters).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        $all(".ref-filter", filters).forEach(function (b) {
+          b.classList.toggle("is-active", b === btn);
+        });
+        refStatusFilter = btn.getAttribute("data-status-filter");
+        renderReferences();
+      });
     });
   }
 
@@ -852,11 +935,12 @@
         $all(".ref-filter", filters).forEach(function (b) {
           b.classList.toggle("is-active", b === btn);
         });
-        renderReferences(btn.getAttribute("data-filter"));
+        refMethodFilter = btn.getAttribute("data-filter");
+        renderReferences();
       });
     });
 
-    renderReferences("all");
+    renderReferences();
   }
 
   function initScrollSpy() {
@@ -891,6 +975,8 @@
     renderTriangle();
     renderValue();
     renderMethodology();
+    renderProofStats();
+    initRefStatusFilters();
     initRefFilters();
     initScrollSpy();
   }

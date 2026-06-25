@@ -13,14 +13,19 @@ Future use: partner meetings, customer conversations, and as source material for
 
 ## Share online (GitHub Pages)
 
-After push to `main`, the page is published automatically:
+**Live link (share with Pieterjan):**  
+**https://karelbonsaiskills.github.io/dse-methodology-site/**
 
-**https://karelbonsaiskills.github.io/dse-methodology/**
+The public site lives in repo [dse-methodology-site](https://github.com/KarelBONSAISkills/dse-methodology-site).  
+Source docs stay in the private [dse-methodology](https://github.com/KarelBONSAISkills/dse-methodology) repo.
 
-Repo: https://github.com/KarelBONSAISkills/dse-methodology  
-Share that link with co-founders and partners — works on any device, no install.
+After editing this folder, publish updates:
 
-> The repository is private; the Pages site is a **public URL** unless you enable private Pages on a paid GitHub plan.
+```bash
+bash scripts/publish-methodology-site.sh
+```
+
+> GitHub Free does not support Pages on **private** repos — that is why the live site uses a separate public repo with only this page (no internal docs).
 
 ## Files
 

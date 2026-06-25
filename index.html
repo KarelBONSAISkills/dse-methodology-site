@@ -71,6 +71,12 @@
       </div>
     </header>
 
+    <div class="proof-band" aria-label="Measures of proof">
+      <div class="proof-band-inner">
+        <div class="proof-stats"></div>
+      </div>
+    </div>
+
     <main id="main">
       <!-- 1. Problems -->
       <section class="section" id="problems">
@@ -214,9 +220,11 @@
           <span class="section-label">06 — Proof</span>
           <h2>References</h2>
           <p class="section-lead">
-            Selected engagements mapped to our methodology pillars. Filter by engagement type.
+            Scale, team, and selected engagements mapped to our methodology pillars.
           </p>
-          <div class="ref-filters" id="ref-filters"></div>
+          <div class="proof-stats" aria-hidden="true"></div>
+          <div class="ref-status-filters" id="ref-status-filters" aria-label="Filter by project status"></div>
+          <div class="ref-filters" id="ref-filters" aria-label="Filter by engagement type"></div>
           <div class="ref-grid" id="ref-grid"></div>
         </div>
       </section>
